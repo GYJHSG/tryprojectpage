@@ -139,13 +139,14 @@ It consists of three core blocks enhancing the reverse process of the diffusion 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    BakedSDF
+                    FinePOSE
                 </h3>
                 <br>
                 <image src="img/FinePOSE_pipeline.jpg" style="width:100%;" class="img-responsive center-block" alt="overview"></image>
                 <br>
                 <p class="text-justify">
-                    Our method bakes a hybrid VolSDF/mip-NeRF 360 scene representation into a triangle mesh, then optimizes a lightweight view-dependent appearance model to reproduce the training images. The final color of the rendered mesh is a sum of spherical Gaussian lobes (queried with the outgoing view direction) and a diffuse color. These parameters are stored per-vertex on the underlying mesh.
+                    We propose a new fine-grained part-aware prompt learning mechanism coupled with diffusion models that possesses human body part controllable high-quality generation capability, beneficial to the 3D human pose estimation task.
+Our method encodes multi-granularity information about action class, coarse- and fine-grained human parts, and kinematic information, and establishes fine-grained communications between learnable part-aware prompts and poses for enhancing the denoising capability
                 </p>
             </div>
         </div>
@@ -153,24 +154,14 @@ It consists of three core blocks enhancing the reverse process of the diffusion 
 		<div class="row comp-margin">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Mesh Extraction and Rendering
+                    More Visualization Results
                 </h3>
                 <div class="b-dics" style="width: 100%">
-                    <img src="img/gardenvase_mesh_ours.jpg" alt="Mesh" />
-                    <img src="img/gardenvase_rendering.jpg" alt="Rendering" />
+                    <img src="img/visual.jpg"/>
                 </div>
             </div>
         </div>
 		<br>
-		
-		<div class="row comp-margin">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="b-dics" style="width: 100%">
-                    <img src="img/mesh.014.jpg" alt="Mesh" />
-                    <img src="img/final.014.jpg" alt="Rendering" />
-                </div>
-            </div>
-        </div>
 
 
 
